@@ -1,3 +1,5 @@
+Repo for the course project in the Coursera Getting and Cleaning Data class
+
 This repo contains four files
 ============================
 
