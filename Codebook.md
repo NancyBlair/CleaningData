@@ -18,6 +18,8 @@ Study Design
 ============
 Data was loaded from the zip file referenced above.
 
+
+
 activity_labels.txt	## contains the numerical to char mapping of the different activity levels
 for this exercise, these were read in manually via notepad and a character
 string created within the R script
@@ -43,6 +45,8 @@ Files in the "Intertial Signals" folder were discarded (not used in the exercise
 Code Book
 =========
 x_test.txt	## raw numerical data from each test execution	
+Please refer to the features_info.txt file included in the zip for details 
+on all the measured variables contained in the raw data
 
 x_train.txt	## raw numerical data from each training execution
 
@@ -55,7 +59,7 @@ subject_test.txt## numerical ID of the subject for each test execution
 subject_train.txt## numerical ID of the subject for each training execution
 
 features.txt	## character labels for each of the data collected - these labels identify the types of data in the x_
-		## data sets - for more details, refer to the Readme contained in the zip file downloaded as part of
+		## data sets - for more details, refer to the features_info.txt contained in the zip file downloaded as part of
 		## the exercise
 
 To successfully run the script, setup your R environment as follows:
