@@ -19,15 +19,23 @@ Study Design
 Data was loaded from the zip file referenced above.
 
 activity_labels.txt	## contains the numerical to char mapping of the different activity levels
-			## for this exercise, these were read in manually via notepad and a character
-			## string created within the R script
+for this exercise, these were read in manually via notepad and a character
+string created within the R script
+
 Files copied into the working directory to execute the script:
-x_test.txt	
+
+x_test.txt
+	
 x_train.txt
+
 y_test.txt
+
 y_train.txt
+
 subject_test.txt
+
 subject_train.txt
+
 features.txt
 
 Files in the "Intertial Signals" folder were discarded (not used in the exercise)
@@ -35,25 +43,37 @@ Files in the "Intertial Signals" folder were discarded (not used in the exercise
 Code Book
 =========
 x_test.txt	## raw numerical data from each test execution	
+
 x_train.txt	## raw numerical data from each training execution
+
 y_test.txt	## numerical list (mapped to activity_labels) representing the activity in each test execution
+
 y_train.txt	## numerical list (mapped to activity_labels) representing the activity in each training execution
+
 subject_test.txt## numerical ID of the subject for each test execution
+
 subject_train.txt## numerical ID of the subject for each training execution
+
 features.txt	## character labels for each of the data collected - these labels identify the types of data in the x_
 		## data sets - for more details, refer to the Readme contained in the zip file downloaded as part of
 		## the exercise
 
 To successfully run the script, setup your R environment as follows:
+
 Load libraries data.table, ddplyr, and plyr
 
 Data Manipulation (see script for details)
 ==========================================
 1) read in test and train x_ data and merge into a single table
+
 2) use the features.txt to determine which columns contain either "mean()" or "std()" character strings and remove unwanted columns
+
 3) read in test and train y_ data and add as a column to the raw data
+
 4) read in test and train subject_ and add as column to the raw data
+
 5) organize raw data by subject and test and average all other columns
+
 6) replace the test ID with character strings from activity_labels and add the appropriate features.txt column names
 
 Output
